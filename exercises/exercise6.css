@@ -1,0 +1,58 @@
+ body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #adc79f;
+            }
+            h1 {
+                font-family: "Cascadia Mono", sans-serif;
+                text-transform: uppercase;
+                color: #5b3a29;
+                background-color: #c7c6c1;
+                padding: 1.5rem
+            }
+
+            hr {
+                border: 3px solid #c7c6c1              
+;
+            }
+
+            h2 {
+                color: #5b3a29;
+                padding: 0.5rem
+            }
+
+            h3 {
+                color: #5b3a29;
+                padding: 0.5rem
+            }
+
+            p {
+                padding-left: 1.3rem;
+                padding-right: 1.3rem;
+                line-height: 1.5rem;
+                font-family: "Courier New", Courier, monospace;
+            }
+
+            img {
+                float: left;
+                border: 2px #ffffff solid; 
+                margin: .65rem;
+                max-width: 100%;
+            }
+
+            a:link {
+                color: deeppink;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: #3209d5
+            }
+            a:hover {
+                color: #c75000;
+                text-decoration: underline;
+            }
+            a:active {
+                color: darkcyan;
+            }
+
+    
