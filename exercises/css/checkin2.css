@@ -1,0 +1,47 @@
+body {
+                font-family: "Cascadia Mono", sans-serif;
+                background-color: #88c9fa;
+            }
+            h1 {
+                font-family: "Cabin Sketch", sans-serif;
+                font-size: 32px;
+                text-transform: uppercase;
+                color: #2b18a3;
+                background-color: #e9d8e1;
+                padding: 1.5rem;
+            }
+            
+            h2 {
+                text-decoration: underline #f353d5;
+            }
+
+            hr {
+                border: 1.5px solid #f353d5
+            }
+
+            p {
+                line-height: 1.5em;
+                padding-left: 1.3rem;
+                padding-right: 1.3rem;
+
+            }
+
+            img {
+                border: 1.5px #f353d5 solid;
+                max-width: 100%;
+                font-size: 16px;
+            }
+
+            a:link {
+                color: #7b5fe7
+            }
+
+            a:visited {
+                color: #2b18a3
+            }
+
+            a:hover {
+                color: #f353d5
+            }
+
+    
