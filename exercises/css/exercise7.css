@@ -10,7 +10,13 @@ header {
 }
 
 main {
-    border: red solid 3px;
+    border: red solid 0px;
+}
+
+.wrapper {
+    border: 0px black solid;
+    margin: 0 auto;
+    max-width: 40rem;
 }
 
 h1 {
@@ -34,3 +40,55 @@ footer {
     text-align: center;
 
 }
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: crimson;
+}
+
+a:hover {
+    color: lightpink;
+}
+
+a:active {
+    color:blueviolet
+}
+
+header a:link {
+    color: white;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: lightpink;
+    text-decoration: underline;
+}
+
+header a:active {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+h2.logo {
+    background-color: rgb(113, 19, 99);
+    text-align: left;
+    width: 6rem;
+    height: 6rem;
+    display: grid;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+
+
+
+
