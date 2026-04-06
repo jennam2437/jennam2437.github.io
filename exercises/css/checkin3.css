@@ -1,0 +1,133 @@
+#layout {
+    display: grid;
+    background-color: #f7f5d5;
+    min-height: 100vh;
+    width: 100vw;
+    border: black solid 1px;
+    grid-template-rows: .1fr 1fr auto;
+}
+
+.box {
+    display: block;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: clamp(2rem, 2.2rem, 4rem);
+    overflow-wrap: break-word;
+    white-space: normal;
+
+}
+
+p {
+    font-size: clamp(1rem, 1.1rem, 2rem);
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+img {
+    display:block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#row1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f7f5d5;
+    color: darkgreen;
+    font-size: 2em;
+    min-height: 0;
+    margin: 0em;
+}
+
+
+
+
+
+#row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 0;
+}
+
+#leftcolumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f29bb9;
+    color: darkgreen;
+}
+
+#rightcolumn img {
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+
+
+#row3 {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto;
+}
+
+#bottomleft {
+    display: flex;
+    padding: 1rem;
+    line-height: 1.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f7f5d5;
+    color: darkgreen;
+}
+
+#bottommiddle img {
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
+}
+
+
+#bottomright {
+    display: block;
+    padding: 1rem;
+    line-height: 1.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f7f5d5;
+    color: darkgreen;
+}
+
+#koi {
+    display: block;
+    float: right;
+    width: 30%;
+    max-width: 175px;
+    height: auto;
+    margin: 1rem;
+}
+
+@media (max-width: 1000px) {
+    #row2, 
+    #row3 {
+        grid-template-columns: 1fr;
+    }
+
+    #row2 > *,
+    #row3 > * {
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
+
+
+
+
+
