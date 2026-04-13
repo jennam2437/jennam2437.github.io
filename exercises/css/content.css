@@ -1,0 +1,116 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    min-height: 100vh;
+    width: 100vw;
+    
+}
+
+
+
+h2 {
+    text-align: center;
+    background-color: aliceblue;
+    padding: 12px;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: pink;
+    margin: 0;
+}
+
+p {
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+}
+
+main img {
+    display: flex;
+    border: 5px green solid;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutme {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: pink;
+    margin: 0;
+}
+
+#schoolprojects {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: lightskyblue;
+}
+
+#personalprojects {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: aquamarine;
+}
+a:link {
+    color: aliceblue;
+    }
+
+a:visited {
+    color: #2b18a3
+    }
+
+a:hover {
+    color: #f353d5
+    }
+
+
+nav li {
+    list-style-type: none;
+    background-color: black;
+    margin: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightgray;
+    padding: 1.5rem
+}
+
+nav a:hover {
+    color: palegoldenrod;
+    background-color: black;
+}
+
+nav a:visited {
+    color:aquamarine;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 25px;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 12px;
+    margin: 0px;
+}
+
+footer address {
+    text-decoration: none;
+    color: lightgray;
+}
+
