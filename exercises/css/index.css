@@ -1,0 +1,81 @@
+body {
+    border: black solid 2px;
+}
+
+main {
+    background-color: #bbbdf6;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem
+}
+
+nav a:hover {
+    color: rgb(234, 227, 157);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #9893da;
+    padding: 25px;
+    margin: 0;
+    flex-wrap: wrap;
+    width: 100vw;
+    font-family: "Cascadia Mono", sans-serif;
+}
+
+#home {
+    display: flex;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #343234;
+    background-color: #bbbdf6;
+    border: white solid 2px;
+    font-family: "Cascadia Mono", sans-serif;
+    font-size: 2rem;
+}
+
+#headshot img {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    border: #9893da;
+}
+
+#introduction {
+    display: flex;
+    text-align: center;
+    color: #343234;
+    align-items: center;
+    font-family: "Cascadia Mono", sans-serif;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.wrapper {
+    border: 0px black solid;
+    margin: 0 auto;
+    max-width: 40rem;
+}
+
