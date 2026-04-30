@@ -1,14 +1,5 @@
 body {
-    border: black solid 2px;
-}
-
-main {
-    background-color: #bbbdf6;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    min-height: 100vh;
-    width: 100vw;
+    background-color: #9893da;
 }
 
 nav li {
@@ -24,46 +15,77 @@ nav a {
 
 nav a:hover {
     color: rgb(234, 227, 157);
+    text-decoration: underline;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     background-color: #9893da;
     padding: 25px;
     margin: 0;
     flex-wrap: wrap;
-    width: 100vw;
-    font-family: "Cascadia Mono", sans-serif;
+    font-family: "Stack Sans Notch", sans-serif;
 }
 
+header {
+    background-color: #9893da;
+    color: white;
+    padding: .05rem;
+    text-align: center; 
+    align-items: center;
+    font-family: "Stock Sans Notch", sans-serif;
+}
+
+
+
+/*^^^^^^^^^^^^^^^INDEX^^^^^^^^^^^^^^^*/
+
+
+.container {
+    background-color: #bbbdf6;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+
 #home {
-    display: flex;
+    display: block;
     grid-row-start: 1;
     grid-row-end: 2;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    text-align: center; 
+    align-items: center; /*vertical align*/
     color: #343234;
     background-color: #bbbdf6;
-    border: white solid 2px;
-    font-family: "Cascadia Mono", sans-serif;
+    font-family: "Stack Sans Notch", sans-serif;
     font-size: 2rem;
+    padding: 2rem;
 }
+
+#name {
+    font-family: "Stack Sans Notch", sans-serif;
+    color: white
+
+}
+
 
 #headshot img {
     display: block;
     margin: auto;
     justify-content: center;
     border: #9893da;
+    clip-path: circle(35%);
 }
 
 #introduction {
-    display: flex;
+    display: block;
     text-align: center;
+    justify-content: center;
     color: #343234;
-    align-items: center;
-    font-family: "Cascadia Mono", sans-serif;
+    font-family: "Stack Sans Notch", sans-serif;
 }
 
 #about {
@@ -71,11 +93,49 @@ nav ul {
     grid-template-columns: 1fr 1fr;
     grid-row-start: 2;
     grid-row-end: 3;
+    background-color: #bbbdf6;
 }
+
+
+
+/*^^^^^^^^^CONTACT^^^^^^^^^^^*/
+
+
+
 
 .wrapper {
     border: 0px black solid;
     margin: 0 auto;
     max-width: 40rem;
+    font-family: "Stack Sans Notch", sans-serif;
 }
 
+address {
+    background-color: #9893da;
+    color: #343234;
+    border: 1px solid gray;
+    padding: 1.3rem;
+    margin: .5rem;
+    margin-bottom: 1.5rem;
+    border-radius: .4rem;
+}
+
+#socials {
+    text-align: center;
+}
+
+.wrapper a:link {
+    color: green;
+}
+
+.wrapper a:visited {
+    color: crimson;
+}
+
+.wrapper a:hover {
+    color: lightpink;
+}
+
+.wrapper a:active {
+    color:blueviolet
+}
