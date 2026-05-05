@@ -336,11 +336,11 @@ nav.title-bar .menu-icon
 	margin: 0;
 	z-index: 1;
 	display: block;
-	width: 229px;
+	width: 299px;
 	height: 55px;
 	align-self: center;
-	background: transparent url('Images/Logo.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Logo.png') no-repeat center center;
+	background: transparent url('Images/accessibilitylogo.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/accessibilitylogo.png') no-repeat center center;
 }
 
 .title-bar-container
