@@ -1,1 +1,1 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/A-Introduction-Topics/Customizing-Transitions.htm'],s:['0'],p:[['0',3],['organizational',2]]});
+define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/A-Introduction-Topics/Customizing-Transitions.htm'],s:['0','standard'],p:[['0',8],['explains',3],['quiet',5]]});
