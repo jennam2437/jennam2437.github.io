@@ -49,7 +49,7 @@ nav ul {
 }
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.481), rgba(0, 0, 0, 0.129)), url("images/indexhero.jpg");
-    min-height: 87vh;
+    min-height: 100vh;
     min-width: 100vw;
     background-position: 10%;
     background-repeat: no-repeat;
@@ -80,8 +80,9 @@ nav ul {
 
 .aboutme {
     background-color: #d1e2f3;
-    min-height: 100vh;
     font-family: "Crimson Text", serif;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .aboutcontent {
@@ -172,7 +173,8 @@ nav ul {
     background-color: #d1e2f3;
     margin: 0;
     color: #032a42;
-    height: 100vh;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 .contacthero {
     text-align: center;
@@ -204,18 +206,19 @@ nav ul {
 }
 
 
-/*DOCUMENTATION*/
+/*PORTFOLIO*/
 
 
 .docwrapper {
     display: grid;
     grid-template-rows: auto auto 1fr;
     background-color: #d1e2f3;
-    min-height: 100vh;
     background-size: cover;
     background-position: center;
     font-family: "Crimson Text", serif;
     color: #032a42;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .dochero {
