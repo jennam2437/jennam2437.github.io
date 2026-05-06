@@ -5,12 +5,12 @@ nav {
     padding: 1rem;
     font-size: 1.3rem;
     list-style: none;
-    background-color: #d1e2f3;
+    background-color: #032a42;
 }
 
 nav a {
     text-decoration: none;
-    color: #032a42;
+    color: #d1e2f3;
     padding: 1.5rem
 }
 
@@ -21,11 +21,19 @@ nav a:hover {
 nav ul {
     display: flex;
     justify-content: center;
-    background-color: #d1e2f3;
     padding: 25px;
     margin: 0;
     flex-wrap: wrap;
     list-style: none;
+}
+
+#name {
+    border: #d1e2f3 2px solid;
+    border-radius: 50%;
+}
+#name:hover {
+    background-color: rgba(74, 73, 73, 0.58);
+
 }
 
 
@@ -35,61 +43,97 @@ nav ul {
 
 .site {
     border: #f0f0dc solid 2px;
-    display: grid;
-    grid-template-rows: 1fr auto;
     font-family: "Crimson Text", serif;
-    background-color: #d1e2f3;
-    margin: 0;
-    color: #032a42;
+    min-height: 100vh;
+    min-width: 100vw;
 }
-
-
-h1, h2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.481), rgba(0, 0, 0, 0.129)), url("images/indexhero.jpg");
-    height: 60vh;
-    width: 80vw;
-    margin: 0 auto;
-    border-radius: 5rem;
-    background-position: 20%;
+    min-height: 87vh;
+    min-width: 100vw;
+    background-position: 10%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
-.herotext p {
-    font-size: 1.5rem;
-    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+
 }
 
 .herotext h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
     color:#f0f0dc;
+}
+
+.herotext p {
+    font-size: 2rem;
+    font-weight: 500;
+    color:#f0f0dc;
+}
+
+
+
+/*ABOUT ME*/
+
+.aboutme {
+    background-color: #d1e2f3;
+    min-height: 100vh;
+    font-family: "Crimson Text", serif;
+}
+
+.aboutcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem;
+    color: #032a42;
+
+}
+
+.aboutmetext {
+    text-align: left;
+    width: 40%;
+    margin-left: 4rem;
+}
+
+.aboutmetext h1 {
+    font-size: 3rem;
+}
+
+.aboutmetext p {
+    font-size: 2rem;
+}
+
+.aboutheader {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.aboutcontent img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 20rem;
+    margin-top: 2rem;
 }
 
 .skills {
     display: flex;
     justify-content: center;
+    text-align: center;
+    align-items: flex-start;
     padding: 2rem;
-    align-items: center;
+    gap: 4rem;             
 }
 
-
-span {
+.tags span {
     display: inline-block;
     border: #0d3b66 solid 1px;
     border-radius: 15px;
@@ -97,43 +141,30 @@ span {
     padding: 0.4rem 1rem;
     margin: 0.5rem auto;
 }
-
-.technical, .professional {
+.experience {
+    display: flex;
+    flex-direction: row;
+}
+.experiencetxt {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    align-items: left;
+    font-size: 1.1rem;
+    width: 50%;
+    margin-left: 10rem;
+}
+
+.experience img {
     padding: 2rem;
-}
-
-.aboutme {
-    padding: 4rem;
-    display: flex;
-    align-items: center;
-}
-
-.aboutme h1 {
-    font-size: 4rem;
-}
-
-.aboutmetext {
-    max-width: 500px;
-    padding-left: 10rem;
-}
-
-.aboutme p {
-    font-size: 2rem;
-}
-
-.aboutme img {
-    height: 300px;
-    width: 300px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-left: 8rem;
+    height: auto;
+    width: auto;
+    border-radius: 50px;
 }
 
 
 /*CONTACT*/
+
 
 .contactwrapper {
     background-color: #d1e2f3;
@@ -151,8 +182,8 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 4rem;
-    padding: 5rem;
+    margin: 2rem;
+    padding: 1rem;
     gap: 2rem;
 }
 
@@ -171,4 +202,75 @@ span {
     text-decoration: underline;
     background-color: #e7e7e7;
 }
+
+
+/*DOCUMENTATION*/
+
+
+.docwrapper {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    background-color: #d1e2f3;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: "Crimson Text", serif;
+    color: #032a42;
+}
+
+.dochero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.481), rgba(0, 0, 0, 0.129)), url("images/southcollege.jpg");
+    height: 40vh;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.dochero h1 {
+    display: inline-block;
+    font-size: 3rem;
+    text-align: center;
+    color: #d1e2f3;
+    border-radius: 10rem;
+    width: 50%;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    text-align: center;
+    align-items: start;
+    margin: 1rem;
+    padding: 2rem;
+}
+
+article {
+    border: #f0f0dc solid 3px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+}
+
+article a {
+    color: #f0f0dc;
+    border: #f0f0dc 2px solid;
+    background-color: #656565;
+    border-radius: 5px;
+    padding: .5rem;
+}
+
+article a:hover {
+    background-color: transparent;
+}
+
 
