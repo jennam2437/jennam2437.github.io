@@ -404,9 +404,9 @@ div.quick-links *	/*Text-align center set to all elements within div.quick-links
 div.topic-hero
 {
 	padding: 5%;
-	background-image: url('../Images/Hero-Image.png');
 	background-size: cover;
 	background-attachment: scroll;
+	background-image: url('../Images/AdobeStock_247618723.jpeg');
 }
 
 div.topic-hero h1
