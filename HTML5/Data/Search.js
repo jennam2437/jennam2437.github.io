@@ -1,1 +1,0 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Audio Description/ad-clipchamp.htm'],s:['0','laura'],p:[['0',4],['can',21],['facial',8],['luckily',7],['repeat',12],['to',16]]});
