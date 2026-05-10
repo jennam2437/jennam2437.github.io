@@ -440,56 +440,337 @@ div.MCBreadcrumbsBox_0
 	margin-bottom: 10px;
 }
 
-.dropDown
+.xref
 {
-	border-bottom: 1px solid #DADEE1;
-	padding: 10px 0;
-}
-
-.dropDownHotspot
-{
-	cursor: hand;
-	text-decoration: none;
-	color: #45494C;
-	font-size: 20pt;
 	font-weight: bold;
-	border-bottom: none;
+	text-decoration: underline;
+	color: #076685;
 }
 
-.dropDownHotspot:link
+.popupHead
 {
-	cursor: hand;
-	text-decoration: none;
-	color: #45494C;
-	font-size: 20pt;
-	font-weight: bold;
-	border-bottom: none;
+	color: blue;
 }
 
-.MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
+.popupHead:link
 {
-	background-position: left;
-	background-image: url('Minus.png');
-	padding-left: 10px;
+	color: blue;
+}
+
+.popupBody
+{
+	color: #000000;
+	background-color: #dcdcdc;
+	border: solid 1px #000000;
+	margin: 0px;
+	padding: 5px;
+}
+
+.MCTextPopupArrow
+{
+	border-bottom-color: #dcdcdc;
+}
+
+.MCTextPopupBodyBottom .MCTextPopupArrow
+{
+	border-top-color: #dcdcdc;
+}
+
+div.MCTocProxy_0
+{
+	border-top: none;
+	margin-right: 0.25in;
+	border-top-width: 1px;
+	border-top-style: none;
+	border-top-color: black;
+	padding-top: 10px;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+table.GenTOCTable1
+{
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
 	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	color: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	page-break-after: avoid;
 }
 
-.MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
+td.GenTOCText1
 {
-	background-position: left;
-	background-image: url('Plus.png');
-	padding-left: 10px;
+	margin: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
 	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	word-spacing: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+	mc-leader-format: '.';
+	mc-leader-indent: 5pt;
+	color: var(--Dark);
+	font-size: 19pt;
+	font-weight: normal;
+	letter-spacing: 0.25px;
 }
 
-.dropDownHead
+a.GenTOCText1:link
 {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	word-spacing: inherit;
+	text-align: inherit;
+	mc-leader-format: '.';
+	mc-leader-indent: 5pt;
+	color: var(--Dark);
+	font-size: 19pt;
+	font-weight: normal;
+	letter-spacing: 0.25px;
 	text-decoration: none;
 }
 
-.dropDownBody
+a.GenTOCText1
 {
-	padding: 10px 30px 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	word-spacing: inherit;
+	text-align: inherit;
+	mc-leader-format: '.';
+	mc-leader-indent: 5pt;
+	color: var(--Dark);
+	font-size: 19pt;
+	font-weight: normal;
+	letter-spacing: 0.25px;
+	text-decoration: none;
+}
+
+td.GenTOCAutoText1
+{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	word-spacing: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+	margin: 0;
+	color: var(--Dark);
+	font-size: 19pt;
+	font-weight: normal;
+	letter-spacing: 0.25px;
+}
+
+td.GenTOCPageText1
+{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	word-spacing: inherit;
+	text-decoration: inherit;
+	margin: 0;
+	vertical-align: bottom;
+	color: var(--Dark);
+	font-size: 19pt;
+	font-weight: normal;
+	letter-spacing: 0.25px;
+	text-align: right;
+	white-space: normal;
+}
+
+td.mcReset
+{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-left-color: transparent;
+	border-left-style: none;
+	border-left-width: 0;
+	border-right-color: transparent;
+	border-right-style: none;
+	border-right-width: 0;
+	border-top-color: transparent;
+	border-top-style: none;
+	border-top-width: 0;
+	border-bottom-color: transparent;
+	border-bottom-style: none;
+	border-bottom-width: 0;
+	background-color: transparent;
+	background-image: none;
+	float: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-variant: inherit;
+	text-transform: inherit;
+	color: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+	text-decoration: inherit;
+	text-align: inherit;
+}
+
+MadCap|xref.TOCPageNumber_0
+{
+	font-weight: inherit;
+	text-decoration: inherit;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
 }
 
 .MCWebHelpFramesetLink a
