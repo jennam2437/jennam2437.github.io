@@ -378,6 +378,10 @@ article a:hover {
         font-size: 2rem;
     }
 
+    .dochero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.609)), url("images/campuspond.JPG");
+    }
+
     /*CONTACT*/
     .socials a {
         width: 90%;
