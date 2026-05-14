@@ -27,6 +27,8 @@ nav ul {
     list-style: none;
 }
 
+
+
 #name {
     border: #d1e2f3 2px solid;
     border-radius: 50%;
@@ -36,16 +38,24 @@ nav ul {
 
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 
 
 /*INDEX*/
-
 
 .site {
     border: #f0f0dc solid 2px;
     font-family: "Crimson Text", serif;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100%;
 }
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.481), rgba(0, 0, 0, 0.129)), url("images/indexhero.jpg");
@@ -74,6 +84,13 @@ nav ul {
     color:#f0f0dc;
 }
 
+#indexcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color:#f0f0dc;
+}
+
 
 
 /*ABOUT ME*/
@@ -82,7 +99,7 @@ nav ul {
     background-color: #d1e2f3;
     font-family: "Crimson Text", serif;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100%;
 }
 
 .aboutcontent {
@@ -145,6 +162,7 @@ nav ul {
 .experience {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 .experiencetxt {
     display: flex;
@@ -163,6 +181,11 @@ nav ul {
     border-radius: 50px;
 }
 
+#aboutmecaption {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
 
 /*CONTACT*/
 
@@ -174,7 +197,7 @@ nav ul {
     margin: 0;
     color: #032a42;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100%;
 }
 .contacthero {
     text-align: center;
@@ -191,6 +214,7 @@ nav ul {
 
 .socials a {
     color: #032a42;
+    background-color: #e7e7e7;
     text-decoration: none;
     font-size: 2rem;
     border: #0d3b66 2px solid;
@@ -202,7 +226,9 @@ nav ul {
 
 .socials a:hover {
     text-decoration: underline;
-    background-color: #e7e7e7;
+    background-color: #032a42;
+    color: #e7e7e7;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
 }
 
 
@@ -218,7 +244,7 @@ nav ul {
     font-family: "Crimson Text", serif;
     color: #032a42;
     min-height: 100vh;
-    min-width: 100vw;
+    width: 100%;
 }
 
 .dochero {
@@ -226,7 +252,7 @@ nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.481), rgba(0, 0, 0, 0.129)), url("images/southcollege.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.607), rgba(0, 0, 0, 0.319)), url("images/campuspond.JPG");
     height: 40vh;
     width: 80vw;
     margin: 0 auto;
@@ -245,6 +271,10 @@ nav ul {
     color: #d1e2f3;
     border-radius: 10rem;
     width: 50%;
+}
+
+#portfoliocaption {
+    padding-left: 15%;
 }
 
 .projects {
@@ -274,6 +304,83 @@ article a {
 
 article a:hover {
     background-color: transparent;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
 }
 
+/*MEDIA*/
 
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /*NAV*/
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    /*ABOUT ME*/
+    .aboutheader {
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutmetext {
+        width: 90%;
+        margin-left: 0;
+    }
+    .aboutcontent img {
+        margin-left: 0;
+    }
+    .experience {
+        flex-direction: column;
+        align-items: center;
+    }
+    .experiencetxt {
+        width: 90%;
+        margin-left: 0;
+    }
+    .experience img {
+        width: 90%;
+    }
+
+    /*INDEX*/
+    .herotext h1 {
+        font-size: 2rem;
+    }
+    .herotext p {
+        font-size: 1.2rem;
+    }
+
+    /*PORTFOLIO*/
+    .projects {
+        grid-template-columns: 1fr;
+    }
+    .dochero {
+        width: 95vw;
+        border-radius: 2rem;
+    }
+    .dochero h1 {
+        font-size: 2rem;
+    }
+
+    /*CONTACT*/
+    .socials a {
+        width: 90%;
+        font-size: 1.3rem;
+    }
+}
