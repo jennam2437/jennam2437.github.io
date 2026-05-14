@@ -371,10 +371,12 @@ article a:hover {
 @media (max-width: 800px) {
 
     /*NAV*/
+
     nav {
         flex-direction: column;
         align-items: center;
     }
+
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -382,45 +384,60 @@ article a:hover {
     }
 
     /*ABOUT ME*/
+
     .aboutheader {
         flex-direction: column;
         align-items: center;
     }
+
     .aboutmetext {
         width: 90%;
         margin-left: 0;
     }
+
     .aboutcontent img {
         margin-left: 0;
     }
+
     .experience {
         flex-direction: column;
         align-items: center;
     }
+
     .experiencetxt {
         width: 90%;
         margin-left: 0;
     }
+
     .experience img {
         width: 90%;
     }
 
     /*INDEX*/
+
     .herotext h1 {
         font-size: 2rem;
     }
+
     .herotext p {
         font-size: 1.2rem;
     }
 
+    .hero {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.563), rgba(0, 0, 0, 0.433)), url("images/indexhero.jpg");
+    }
+
     /*PORTFOLIO*/
+
     .projects {
         grid-template-columns: 1fr;
     }
+
     .dochero {
         width: 95vw;
         border-radius: 2rem;
     }
+
     .dochero h1 {
         font-size: 2rem;
     }
@@ -430,6 +447,7 @@ article a:hover {
     }
 
     /*CONTACT*/
+
     .socials a {
         width: 90%;
         font-size: 1.3rem;
