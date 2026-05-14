@@ -59,8 +59,8 @@ body {
 }
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.481), rgba(0, 0, 0, 0.129)), url("images/indexhero.jpg");
-    min-height: 100vh;
-    min-width: 100vw;
+    height: 100vh;
+    width: 100%;
     background-position: 10%;
     background-repeat: no-repeat;
     background-size: cover;
