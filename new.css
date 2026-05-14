@@ -89,7 +89,10 @@ body {
     bottom: 0;
     left: 0;
     color:#f0f0dc;
+    font-size: 0.9rem;
 }
+
+
 
 
 
@@ -103,20 +106,24 @@ body {
 }
 
 .aboutcontent {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "aboutheader aboutheader"
+        "skills skills"
+        "experience experience";
     align-items: center;
     justify-content: center;
     gap: 4rem;
     padding: 2rem;
     color: #032a42;
-
 }
 
 .aboutmetext {
     text-align: left;
-    width: 40%;
-    margin-left: 4rem;
+    width: 45%;
+    margin-left: 0;
 }
 
 .aboutmetext h1 {
@@ -128,8 +135,12 @@ body {
 }
 
 .aboutheader {
+    grid-area: aboutheader;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
 }
 
 
@@ -138,11 +149,12 @@ body {
     width: 350px;
     object-fit: cover;
     border-radius: 50%;
-    margin-left: 20rem;
-    margin-top: 2rem;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .skills {
+    grid-area: skills;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -160,9 +172,19 @@ body {
     margin: 0.5rem auto;
 }
 .experience {
+    grid-area: experience;
     display: flex;
     flex-direction: row;
     position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.experienceimgwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem
 }
 .experiencetxt {
     display: flex;
@@ -171,21 +193,43 @@ body {
     align-items: left;
     font-size: 1.1rem;
     width: 50%;
-    margin-left: 10rem;
+    color: #032a42;
 }
 
-.experience img {
-    padding: 2rem;
-    height: auto;
-    width: auto;
+.experienceimgwrapper img {
+    object-fit: cover;
+    height: 500;
+    width: 450px;
     border-radius: 50px;
 }
 
 #aboutmecaption {
-    position: relative;
-    bottom: 0;
-    left: 0;
+    margin: 0;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+
 }
+
+#resume {
+    font-size: 1.5rem;
+}
+
+#resume a {
+    color: #f0f0dc;
+    border: #f0f0dc 2px solid;
+    background-color: #656565;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+#resume a:hover {
+    background-color: #f0f0dc;;
+    color: #656565;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+    text-decoration: underline;
+}
+
 
 /*CONTACT*/
 
@@ -275,6 +319,7 @@ body {
 
 #portfoliocaption {
     padding-left: 15%;
+    font-size: 0.9rem;
 }
 
 .projects {
@@ -300,11 +345,14 @@ article a {
     background-color: #656565;
     border-radius: 5px;
     padding: .5rem;
+    text-decoration: none;
 }
 
 article a:hover {
-    background-color: transparent;
-    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6)
+    background-color: #f0f0dc;
+    color: #656565;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.6);
+    text-decoration: underline;
 }
 
 /*MEDIA*/
@@ -321,7 +369,7 @@ article a:hover {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 
     /*NAV*/
     nav {
